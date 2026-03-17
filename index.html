@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://lebonbondepain.re/">
     <meta property="og:title" content="Le Bonbon de Pain - Snack Atchia | Saveurs Authentiques à La Réunion">
     <meta property="og:description" content="Découvrez Le Bonbon de Pain, snack à Saint-Denis proposant gâteaux, snacks sucrés & salés, prêts à déguster ou à cuire.">
-    <meta property="og:image" content="./assets/images/logo.png">
+    <meta property="og:image" content="./assets/images/original/logo.png">
     <meta property="og:locale" content="fr_FR">
     
     <!-- Twitter -->
@@ -25,11 +25,11 @@
     <meta property="twitter:url" content="https://lebonbondepain.re/">
     <meta property="twitter:title" content="Le Bonbon de Pain - Snack Atchia">
     <meta property="twitter:description" content="Découvrez Le Bonbon de Pain, snack à Saint-Denis proposant gâteaux, snacks sucrés & salés.">
-    <meta property="twitter:image" content="./assets/images/logo.png">
+    <meta property="twitter:image" content="./assets/images/original/logo.png">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./assets/images/logo.png">
-    <link rel="apple-touch-icon" href="./assets/images/logo.png">
+    <link rel="icon" type="image/png" href="./assets/images/original/logo.png">
+    <link rel="apple-touch-icon" href="./assets/images/original/logo.png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,7 +65,7 @@
         ],
         "priceRange": "€",
         "servesCuisine": ["Snack", "Gâteaux", "Cuisine Réunionnaise"],
-        "image": "./assets/images/logo.png"
+        "image": "./assets/images/original/logo.png"
     }
     </script>
 </head>
@@ -74,7 +74,7 @@
     <nav class="navbar" role="navigation" aria-label="Navigation principale">
         <div class="container">
             <a href="#" class="logo">
-                <img src="./assets/images/logo.png" alt="Le Bonbon de Pain - Snack Atchia" loading="eager" width="150" height="50">
+                <img src="./assets/images/original/logo.png" alt="Le Bonbon de Pain - Snack Atchia" loading="eager">
             </a>
             
             <ul class="nav-links">
@@ -87,14 +87,14 @@
             </ul>
             
             <div class="nav-cta">
-                <a href="https://wa.me/262XXXXXXXX" class="whatsapp-icon" aria-label="Contact WhatsApp" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/262XXXXXXXX" class="whatsapp-btn" aria-label="Contact WhatsApp" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-                <div class="menu-toggle" aria-label="Menu mobile" role="button" tabindex="0">
+                <button class="menu-toggle" aria-label="Menu mobile">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </div>
     </nav>
@@ -125,45 +125,28 @@
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" aria-label="Délicieux snacks et gâteaux">
-                    <defs>
-                        <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#ed7a00;stop-opacity:0.2"/>
-                            <stop offset="100%" style="stop-color:#db9423;stop-opacity:0.3"/>
-                        </linearGradient>
-                    </defs>
-                    <!-- Background -->
-                    <rect x="20" y="20" width="460" height="360" rx="16" fill="url(#heroGrad)"/>
-                    <!-- Decorative elements - food icons -->
-                    <circle cx="120" cy="120" r="60" fill="#ed7a00" opacity="0.9"/>
-                    <circle cx="120" cy="120" r="45" fill="#f5a623"/>
-                    <circle cx="120" cy="120" r="30" fill="#f8d56b"/>
-                    <circle cx="380" cy="150" r="50" fill="#db9423" opacity="0.9"/>
-                    <circle cx="380" cy="150" r="35" fill="#ed7a00"/>
-                    <circle cx="380" cy="150" r="20" fill="#fff5e6"/>
-                    <rect x="150" y="220" width="200" height="120" rx="15" fill="#ed7a00" opacity="0.85"/>
-                    <rect x="165" y="235" width="170" height="90" rx="10" fill="#f5a623"/>
-                    <circle cx="250" cy="280" r="25" fill="#db9423"/>
-                    <circle cx="180" cy="100" r="15" fill="#db9423" opacity="0.6"/>
-                    <circle cx="400" cy="280" r="20" fill="#ed7a00" opacity="0.6"/>
-                    <circle cx="80" cy="280" r="18" fill="#f5a623" opacity="0.7"/>
-                    <text x="250" y="360" text-anchor="middle" font-family="Poppins" font-size="18" fill="#1a1a1a" font-weight="600">Snacks & Gâteaux Réunionnais</text>
-                </svg>
+            <div class="hero-image-wrapper">
+                <div class="hero-image">
+                    <img src="./assets/images/original/hero-image.webp" alt="Délicieux snacks et gâteaux du Bonbon de Pain" loading="eager">
+                </div>
                 
-                <div class="floating-badge floating-badge-1">
-                    <i class="fas fa-fire"></i>
-                    <div class="floating-badge-text">
-                        Prêt à déguster
-                        <span>Chaud et savoureux</span>
+                <div class="floating-card floating-card-1">
+                    <div class="floating-card-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="floating-card-content">
+                        <h4>Prêt à déguster</h4>
+                        <p>Chaud et savoureux</p>
                     </div>
                 </div>
                 
-                <div class="floating-badge floating-badge-2">
-                    <i class="fas fa-snowflake"></i>
-                    <div class="floating-badge-text">
-                        Prêt à cuire
-                        <span>À emporter chez vous</span>
+                <div class="floating-card floating-card-2">
+                    <div class="floating-card-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <div class="floating-card-content">
+                        <h4>Prêt à cuire</h4>
+                        <p>À emporter chez vous</p>
                     </div>
                 </div>
             </div>
@@ -174,41 +157,9 @@
     <section id="presentation" class="presentation">
         <div class="container">
             <div class="presentation-image reveal">
-                <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" aria-label="Notre boutique Le Bonbon de Pain">
-                    <defs>
-                        <linearGradient id="presGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#fff8f0"/>
-                            <stop offset="100%" style="stop-color:#f5e6d3"/>
-                        </linearGradient>
-                    </defs>
-                    <!-- Shop illustration -->
-                    <rect x="50" y="80" width="400" height="280" rx="16" fill="url(#presGrad)" stroke="#ed7a00" stroke-width="3"/>
-                    <!-- Shop front -->
-                    <rect x="80" y="120" width="340" height="200" rx="8" fill="#fff"/>
-                    <!-- Awning -->
-                    <path d="M70 120 L430 120 L420 150 L80 150 Z" fill="#ed7a00"/>
-                    <path d="M80 150 L100 150 L100 180 L80 180 Z" fill="#db9423"/>
-                    <path d="M120 150 L140 150 L140 180 L120 180 Z" fill="#ed7a00"/>
-                    <path d="M160 150 L180 150 L180 180 L160 180 Z" fill="#db9423"/>
-                    <path d="M200 150 L220 150 L220 180 L200 180 Z" fill="#ed7a00"/>
-                    <path d="M240 150 L260 150 L260 180 L240 180 Z" fill="#db9423"/>
-                    <path d="M280 150 L300 150 L300 180 L280 180 Z" fill="#ed7a00"/>
-                    <path d="M320 150 L340 150 L340 180 L320 180 Z" fill="#db9423"/>
-                    <path d="M360 150 L380 150 L380 180 L360 180 Z" fill="#ed7a00"/>
-                    <path d="M400 150 L420 150 L420 180 L400 180 Z" fill="#db9423"/>
-                    <!-- Door -->
-                    <rect x="200" y="200" width="100" height="120" rx="4" fill="#8b4513"/>
-                    <rect x="210" y="210" width="80" height="100" rx="2" fill="#654321"/>
-                    <circle cx="280" cy="260" r="4" fill="#ffd700"/>
-                    <!-- Windows -->
-                    <rect x="100" y="200" width="80" height="80" rx="4" fill="#87ceeb"/>
-                    <rect x="105" y="205" width="70" height="70" rx="2" fill="#b0e0e6"/>
-                    <rect x="320" y="200" width="80" height="80" rx="4" fill="#87ceeb"/>
-                    <rect x="325" y="205" width="70" height="70" rx="2" fill="#b0e0e6"/>
-                    <!-- Sign -->
-                    <rect x="120" y="90" width="260" height="40" rx="20" fill="#ed7a00"/>
-                    <text x="250" y="118" text-anchor="middle" font-family="Abril Fatface" font-size="20" fill="#fff">Snack Atchia</text>
-                </svg>
+                <div class="presentation-image-wrapper">
+                    <img src="./assets/images/original/snack-atchia.webp" alt="Notre boutique Le Bonbon de Pain">
+                </div>
             </div>
             
             <div class="presentation-content reveal">
@@ -219,20 +170,28 @@
                 </p>
                 
                 <div class="features-grid">
-                    <div class="feature-item">
-                        <i class="fas fa-check-circle"></i>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                         <span>Produits faits maison</span>
                     </div>
-                    <div class="feature-item">
-                        <i class="fas fa-check-circle"></i>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
                         <span>Ingrédients frais</span>
                     </div>
-                    <div class="feature-item">
-                        <i class="fas fa-check-circle"></i>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
                         <span>Saveurs authentiques</span>
                     </div>
-                    <div class="feature-item">
-                        <i class="fas fa-check-circle"></i>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
                         <span>Service rapide</span>
                     </div>
                 </div>
@@ -260,8 +219,8 @@
                         <i class="fas fa-fire-alt"></i>
                     </div>
                     <h3>Prêt à Déguster</h3>
-                    <p>Chaud et savoureux, nos snacks sont préparés à la commande et servis immédiatement pour une expérience gustative optimale. Parfait pour une pause déjeuner rapide.</p>
-                    <a href="#contact" class="btn btn-outline">Découvrir Nos Formats</a>
+                    <p>Chaud et savoureux, nos snacks sont préparés à la commande et servis immédiatement pour une expérience gustative optimale.</p>
+                    <a href="#contact" class="btn btn-outline">Découvrir</a>
                 </div>
                 
                 <div class="format-card reveal">
@@ -269,8 +228,8 @@
                         <i class="fas fa-snowflake"></i>
                     </div>
                     <h3>Prêt à Cuire</h3>
-                    <p>Idéal pour vos soirées et moments conviviaux à la maison. Nos produits surgelés conservent toute leur saveur et sont prêts en quelques minutes au four ou à la friteuse.</p>
-                    <a href="#contact" class="btn btn-outline">Découvrir Nos Formats</a>
+                    <p>Idéal pour vos soirées et moments conviviaux à la maison. Nos produits surgelés conservent toute leur saveur.</p>
+                    <a href="#contact" class="btn btn-outline">Découvrir</a>
                 </div>
             </div>
         </div>
@@ -288,13 +247,7 @@
             <div class="products-grid">
                 <article class="product-card reveal">
                     <div class="product-image">
-                        <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" aria-label="Bonbon Piment">
-                            <rect width="300" height="220" fill="#fff5e6"/>
-                            <circle cx="150" cy="110" r="70" fill="#ed7a00"/>
-                            <circle cx="150" cy="110" r="55" fill="#f5a623"/>
-                            <path d="M150 75 L160 100 L185 100 L165 115 L172 140 L150 125 L128 140 L135 115 L115 100 L140 100 Z" fill="#d63031"/>
-                            <text x="150" y="190" text-anchor="middle" font-family="Poppins" font-size="14" fill="#1a1a1a" font-weight="600">Bonbon Piment</text>
-                        </svg>
+                        <img src="./assets/images/original/bonbon-piment.webp" alt="Bonbon Piment - Spécialité du Snack Atchia" loading="lazy">
                         <span class="product-badge">Best-Seller</span>
                     </div>
                     <div class="product-content">
@@ -306,14 +259,7 @@
                 
                 <article class="product-card reveal">
                     <div class="product-image">
-                        <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" aria-label="Samoussa Poulet">
-                            <rect width="300" height="220" fill="#fff5e6"/>
-                            <polygon points="150,50 220,150 80,150" fill="#ed7a00"/>
-                            <polygon points="150,70 200,140 100,140" fill="#f5a623"/>
-                            <polygon points="150,90 180,130 120,130" fill="#db9423"/>
-                            <circle cx="150" cy="110" r="15" fill="#654321" opacity="0.3"/>
-                            <text x="150" y="190" text-anchor="middle" font-family="Poppins" font-size="14" fill="#1a1a1a" font-weight="600">Samoussa Poulet</text>
-                        </svg>
+                        <img src="./assets/images/original/samoussa-poulet.webp" alt="Samoussa Poulet" loading="lazy">
                         <span class="product-badge">Populaire</span>
                     </div>
                     <div class="product-content">
@@ -325,14 +271,7 @@
                 
                 <article class="product-card reveal">
                     <div class="product-image">
-                        <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" aria-label="Bonbon Pain">
-                            <rect width="300" height="220" fill="#fff5e6"/>
-                            <ellipse cx="150" cy="110" rx="80" ry="50" fill="#ed7a00"/>
-                            <ellipse cx="150" cy="110" rx="65" ry="38" fill="#f5a623"/>
-                            <ellipse cx="150" cy="110" rx="50" ry="26" fill="#f8d56b"/>
-                            <path d="M120 100 Q150 120 180 100" stroke="#ed7a00" stroke-width="3" fill="none"/>
-                            <text x="150" y="190" text-anchor="middle" font-family="Poppins" font-size="14" fill="#1a1a1a" font-weight="600">Bonbon Pain</text>
-                        </svg>
+                        <img src="./assets/images/original/produits-cuits.webp" alt="Bonbon Pain" loading="lazy">
                         <span class="product-badge">Classique</span>
                     </div>
                     <div class="product-content">
@@ -343,7 +282,7 @@
                 </article>
             </div>
             
-            <div class="section-header reveal" style="margin-top: 80px;">
+            <div class="section-header reveal" style="margin-top: 100px;">
                 <span class="section-tag">Gourmandises</span>
                 <h2>Nos Best-Sellers Sucrés</h2>
                 <p>Succombez à nos délices sucrés tels que Moukari, Bonbon Kalou et Jalebi, parfaits pour une pause gourmande.</p>
@@ -352,14 +291,7 @@
             <div class="products-grid">
                 <article class="product-card reveal">
                     <div class="product-image">
-                        <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" aria-label="Moukari">
-                            <rect width="300" height="220" fill="#fff5e6"/>
-                            <circle cx="120" cy="110" r="40" fill="#8b4513"/>
-                            <circle cx="180" cy="110" r="40" fill="#a0522d"/>
-                            <circle cx="150" cy="80" r="35" fill="#cd853f"/>
-                            <circle cx="150" cy="140" r="35" fill="#d2691e"/>
-                            <text x="150" y="195" text-anchor="middle" font-family="Poppins" font-size="14" fill="#1a1a1a" font-weight="600">Moukari</text>
-                        </svg>
+                        <img src="./assets/images/original/moukari.webp" alt="Moukari - Gâteau traditionnel" loading="lazy">
                         <span class="product-badge">Favori</span>
                     </div>
                     <div class="product-content">
@@ -371,14 +303,7 @@
                 
                 <article class="product-card reveal">
                     <div class="product-image">
-                        <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" aria-label="Bonbon Kalou">
-                            <rect width="300" height="220" fill="#fff5e6"/>
-                            <circle cx="150" cy="110" r="60" fill="#4a0080"/>
-                            <circle cx="150" cy="110" r="45" fill="#6a0dad"/>
-                            <circle cx="150" cy="110" r="30" fill="#9932cc"/>
-                            <circle cx="150" cy="110" r="15" fill="#da70d6"/>
-                            <text x="150" y="190" text-anchor="middle" font-family="Poppins" font-size="14" fill="#1a1a1a" font-weight="600">Bonbon Kalou</text>
-                        </svg>
+                        <img src="./assets/images/original/bonbon-kalou.webp" alt="Bonbon Kalou" loading="lazy">
                         <span class="product-badge">Spécialité</span>
                     </div>
                     <div class="product-content">
@@ -390,13 +315,7 @@
                 
                 <article class="product-card reveal">
                     <div class="product-image">
-                        <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" aria-label="Jalebi">
-                            <rect width="300" height="220" fill="#fff5e6"/>
-                            <path d="M150 60 Q180 60 180 90 Q180 120 150 120 Q120 120 120 90 Q120 60 150 60" fill="none" stroke="#ed7a00" stroke-width="8"/>
-                            <path d="M150 90 Q170 90 170 110 Q170 130 150 130 Q130 130 130 110 Q130 90 150 90" fill="none" stroke="#db9423" stroke-width="6"/>
-                            <circle cx="150" cy="100" r="8" fill="#f5a623"/>
-                            <text x="150" y="170" text-anchor="middle" font-family="Poppins" font-size="14" fill="#1a1a1a" font-weight="600">Jalebi</text>
-                        </svg>
+                        <img src="./assets/images/original/jalebi.webp" alt="Jalebi - Pâtisserie indienne" loading="lazy">
                         <span class="product-badge">Tradition</span>
                     </div>
                     <div class="product-content">
@@ -407,10 +326,10 @@
                 </article>
             </div>
             
-            <div style="text-align: center; margin-top: 50px;">
+            <div style="text-align: center; margin-top: 60px;">
                 <a href="#contact" class="btn btn-primary">
-                    <i class="fas fa-eye"></i>
-                    Voir Nos Best-Sellers
+                    <i class="fas fa-shopping-basket"></i>
+                    Commander Maintenant
                 </a>
             </div>
         </div>
@@ -457,8 +376,8 @@
                 </div>
             </div>
             
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="#contact" class="btn btn-light">
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="#contact" class="btn btn-secondary">
                     <i class="fas fa-envelope"></i>
                     Contactez-Nous
                 </a>
@@ -473,7 +392,7 @@
                 <div class="contact-info reveal">
                     <span class="section-tag" style="text-align: left; display: block;">Contact</span>
                     <h2>Contactez Le Bonbon de Pain</h2>
-                    <p>Pour toute demande de réservation ou renseignement, contactez-nous via WhatsApp en cliquant sur le logo dédié. Nous sommes ravis de partager notre passion avec vous.</p>
+                    <p>Pour toute demande de réservation ou renseignement, contactez-nous via WhatsApp. Nous sommes ravis de partager notre passion avec vous.</p>
                     
                     <div class="contact-details">
                         <div class="contact-item">
@@ -510,7 +429,7 @@
                     <div class="contact-cta">
                         <a href="https://wa.me/262XXXXXXXX" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-whatsapp"></i>
-                            Réservez dès maintenant
+                            Réservez par WhatsApp
                         </a>
                     </div>
                 </div>
@@ -556,13 +475,6 @@
                     <span>@lebonbondepain</span>
                 </a>
             </div>
-            
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="#" class="btn btn-primary" onclick="window.open('https://facebook.com','_blank'); return false;">
-                    <i class="fas fa-heart"></i>
-                    Suivez-nous
-                </a>
-            </div>
         </div>
     </section>
 
@@ -571,7 +483,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="./assets/images/logo.png" alt="Le Bonbon de Pain" loading="lazy">
+                    <img src="./assets/images/original/logo.png" alt="Le Bonbon de Pain" loading="lazy">
                     <p>Votre snack préféré à Saint-Denis, La Réunion. Gâteaux, snacks sucrés et salés, produits surgelés de qualité.</p>
                 </div>
                 
@@ -593,7 +505,6 @@
                         <li><a href="#produits">Samoussa</a></li>
                         <li><a href="#produits">Moukari</a></li>
                         <li><a href="#produits">Jalebi</a></li>
-                        <li><a href="#produits">Voir tout</a></li>
                     </ul>
                 </div>
                 
@@ -608,19 +519,20 @@
                             <i class="fas fa-phone"></i>
                             <span>+262 XX XX XX XX</span>
                         </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>contact@lebonbondepain.re</span>
-                        </li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2026 Le Bonbon de Pain - Snack Atchia. Tous droits réservés. | Made with <i class="fas fa-heart" style="color: #ed7a00;"></i> à La Réunion</p>
+                <p>&copy; 2026 Le Bonbon de Pain - Snack Atchia. Tous droits réservés. | Made with <i class="fas fa-heart"></i> à La Réunion</p>
             </div>
         </div>
     </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Scripts -->
     <script src="./assets/js/main.js" defer></script>
